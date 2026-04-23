@@ -69,10 +69,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q       &kp W       &kp F         &kp P        &kp B        &kp J        &kp L            &kp U         &kp Y       &kp APOS
-       &mt LGUI A  &mt LALT R  &mt LCTRL S   &mt LSHFT T  &kp G        &kp H        &mt RSHFT N      &mt RCTRL E   &mt RALT I  &mt RGUI O
-&kp Q  &kp Z       &kp X       &kp C         &kp D        &kp V        &kp K        &kp M            &kp COMMA     &kp DOT     &kp FSLH    &kp BSLH
-                               &lt 1 ESCAPE  &lt 2 SPACE  &lt 3 TAB    &lt 4 ENTER  &lt 5 BACKSPACE  &lt 6 DELETE
+       &kp Q       &kp W       &kp F         &kp P        &kp B        &kp J        &kp L            &kp U        &kp Y       &kp APOS
+       &mt LGUI A  &mt LALT R  &mt LCTRL S   &mt LSHFT T  &kp G        &kp H        &mt RSHFT N      &mt RCTRL E  &mt RALT I  &mt RGUI O
+&kp Q  &kp Z       &kp X       &kp C         &kp D        &kp V        &kp K        &kp M            &kp COMMA    &kp DOT     &kp FSLH    &kp BSLH
+                               &lt 1 ESCAPE  &lt 2 SPACE  &lt 3 TAB    &lt 4 ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -93,41 +93,32 @@
 
         nav {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans    &trans    &trans     &trans          &trans    &trans        &trans         &trans     &trans        &trans
+        &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp CAPSLOCK  &kp LEFT       &kp DOWN   &kp UP_ARROW  &kp RIGHT
+&trans  &trans    &trans    &trans     &trans          &trans    &kp INSERT    &kp HOME       &kp PG_DN  &kp PG_UP     &kp END    &trans
+                            &trans     &trans          &trans    &kp ENTER     &kp BACKSPACE  &trans
             >;
         };
 
         fun {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans    &trans    &trans     &trans      &trans    &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12
+        &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHIFT  &trans    &kp SCROLLLOCK   &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans    &trans    &trans     &trans      &trans    &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+                            &trans     &trans      &trans    &trans           &trans  &trans
             >;
         };
 
         sym {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp LS(LEFT_BRACKET)  &kp LS(N7)        &kp LS(N8)            &kp LS(N9)             &kp LS(RIGHT_BRACKET)    &trans  &trans     &trans     &trans    &trans
+        &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)            &kp LS(NUMBER_6)       &kp LS(EQUAL)            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
+&trans  &kp LS(NON_US_HASH)   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)      &kp LS(NUMBER_3)       &kp LS(BACKSLASH)        &trans  &trans     &trans     &trans    &trans    &trans
+                                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LS(MINUS)            &trans  &trans     &trans
             >;
         };
 
         num {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        adjust {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
