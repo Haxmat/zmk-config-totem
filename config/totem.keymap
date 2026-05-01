@@ -23,10 +23,10 @@
 
 &mt {
     quick-tap-ms = <185>;
-    global-quick-tap;
     flavor = "tap-preferred";
     tapping-term-ms = <185>;
     require-prior-idle-ms = <0>;
+    hold-while-undecided;
 };
 
 / {
