@@ -112,10 +112,10 @@
 
         sym {
             bindings = <
-        &kp LS(LEFT_BRACKET)  &kp LS(N7)        &kp LS(N8)            &kp LS(N9)        &kp LS(RIGHT_BRACKET)    &trans  &trans     &trans     &trans    &trans
-        &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)            &kp LS(NUMBER_6)  &kp LS(EQUAL)            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
-&trans  &kp LS(NON_US_HASH)   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &kp LS(BACKSLASH)        &trans  &trans     &trans     &trans    &trans    &trans
-                                                &kp LEFT_PARENTHESIS  &kp LS(MINUS)     &kp RIGHT_PARENTHESIS    &trans  &trans     &trans
+        &kp LS(LEFT_BRACKET)  &kp LS(N7)        &kp LS(N8)            &kp LS(N9)             &kp LS(RIGHT_BRACKET)    &trans  &trans     &trans     &trans    &trans
+        &kp LS(SEMICOLON)     &kp LS(NUMBER_4)  &kp LS(N5)            &kp LS(NUMBER_6)       &kp LS(EQUAL)            &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
+&trans  &kp LS(NON_US_HASH)   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)      &kp LS(NUMBER_3)       &kp LS(BACKSLASH)        &trans  &trans     &trans     &trans    &trans    &trans
+                                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LS(MINUS)            &trans  &trans     &trans
             >;
         };
 
