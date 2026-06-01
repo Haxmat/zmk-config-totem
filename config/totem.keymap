@@ -54,10 +54,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q       &kp W       &kp F         &kp P        &kp B          &kp J        &kp L            &kp U        &kp Y       &kp APOS
-       &mt LGUI A  &mt LALT R  &mt LCTRL S   &mt LSHFT T  &kp G          &kp M        &mt LSHFT N      &mt LCTRL E  &mt LALT I  &mt LGUI O
-&kp Q  &kp Z       &kp X       &kp C         &kp D        &kp V          &kp K        &kp H            &kp COMMA    &kp DOT     &kp FSLH    &kp SQT
-                               &lt 1 ESCAPE  &lt 2 TAB    &lt 6 SPACE    &lt 4 ENTER  &lt 5 BACKSPACE  &kp DELETE
+       &kp Q       &kp W       &kp F         &kp P        &kp B          &kp J        &kp L            &kp U         &kp Y       &kp APOS
+       &mt LGUI A  &mt LALT R  &mt LCTRL S   &mt LSHFT T  &kp G          &kp M        &mt LSHFT N      &mt LCTRL E   &mt LALT I  &mt LGUI O
+&kp Q  &kp Z       &kp X       &kp C         &kp D        &kp V          &kp K        &kp H            &kp COMMA     &kp DOT     &kp FSLH    &kp SQT
+                               &lt 1 ESCAPE  &lt 2 TAB    &lt 6 SPACE    &lt 4 ENTER  &lt 5 BACKSPACE  &lt 3 DELETE
             >;
         };
 
@@ -69,10 +69,10 @@
 
         media {
             bindings = <
-        &trans      &trans             &trans      &trans            &trans        &trans      &trans             &trans      &trans           &trans
-        &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP   &kp C_NEXT    &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &kp C_NEXT
-&trans  &trans      &trans             &trans      &trans            &trans        &trans      &trans             &trans      &trans           &trans      &trans
-                                       &trans      &kp C_PLAY_PAUSE  &kp C_STOP    &kp C_STOP  &kp C_PLAY_PAUSE   &trans
+        &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3    &trans      &trans             &trans      &trans           &trans
+        &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_MUTE    &kp C_VOLUME_UP   &kp C_NEXT      &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &kp C_NEXT
+&trans  &trans      &trans             &trans        &trans            &trans          &trans      &trans             &trans      &trans           &trans      &trans
+                                       &trans        &kp C_PLAY_PAUSE  &kp C_STOP      &kp C_STOP  &kp C_PLAY_PAUSE   &trans
             >;
         };
 
@@ -87,10 +87,10 @@
 
         fun {
             bindings = <
-        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F12
-        &kp LGUI    &kp LALT      &kp LCTRL     &kp LSHIFT    &trans          &kp SCROLLLOCK   &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans      &trans        &trans        &trans        &trans          &kp PAUSE_BREAK  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                  &trans        &trans        &trans          &trans           &trans  &trans
+        &kp F12  &kp F7  &kp F8      &kp F9  &kp PRINTSCREEN    &trans  &trans      &trans     &trans    &trans
+        &kp F11  &kp F4  &kp F5      &kp F6  &kp SCROLLLOCK     &trans  &kp RSHIFT  &kp LCTRL  &kp LALT  &kp LGUI
+&trans  &kp F10  &kp F1  &kp F2      &kp F3  &kp PAUSE_BREAK    &trans  &trans      &trans     &trans    &trans    &trans
+                         &kp C_MENU  &trans  &trans             &trans  &trans      &trans
             >;
         };
 
