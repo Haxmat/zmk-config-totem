@@ -11,6 +11,9 @@
 
 &kscan0 {
     compatible = "zmk,kscan-mock";
+    /delete-property/ diode-direction;
+    /delete-property/ row-gpios;
+    /delete-property/ col-gpios;
     columns = <0>;
     rows = <0>;
     events = <0>;
