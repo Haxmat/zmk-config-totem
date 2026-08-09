@@ -4,18 +4,17 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,matrix-transform = &default_transform;
-        // Links the physical layout structure for ZMK Studio to read
-        zmk,physical-layout = &default_layout;
+        // Direct pointer to the layout block declared right below
+        zmk,physical-layout = &totem_physical_layout;
     };
 
     mock_kscan: kscan {
         compatible = "zmk,kscan-mock";
-        columns = <38>; // Total key count of the Totem
+        columns = <38>;
         rows = <1>;
         events = <>;
     };
 
-    // The exact matrix map copied from your totem.dtsi
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
@@ -27,7 +26,10 @@
                                 RC(3,2) RC(3,3) RC(3,4)    RC(3,5) RC(3,6) RC(3,7)         
         >;
     };
-};
 
-// Include the physical layout structure explicitly for the dongle target
-#include <physical_layouts.dtsi>
+    totem_physical_layout: totem_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Geist Totem";
+        transform = <&default_transform>;
+    };
+};
